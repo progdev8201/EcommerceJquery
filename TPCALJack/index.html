@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Traitement</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.4.0.js"> </script>
+	</head>
+
+	<body>
+
+		<header>
+		</header>
+
+		<main>
+			<section>
+
+				<form action="index2.html" method="get">
+					<h1>CAL JACK</h1>
+
+					<label for="username">Code utilisateur</label>
+					<input type="text" name="username" id="username" placeholder=" Entre 5 et 10 caracteres alpahbetiques" required minlength="5" maxlength="10">
+
+					<span id="ascii"></span>
+					<label for="password">Mot de passe</label>
+					<input type="password" name="password" id="password" placeholder=" Exactement 8 chiffres" required minlength="8" maxlength="8">
+
+				<div>
+					<div>
+					<!--	<img src="images/pique/pique.jpg" alt="pique">
+						<img src="images/coeur/coeur.jpg" alt="coeur">
+						<img src="images/carreau/carreau.jpg" alt="carreau">
+						<img src="images/trefle/trefle.jpg" alt="trefle">-->
+						<span id="spades">&spades;</span>
+						<span id="hearts">&hearts;</span>
+						<span id="diams">&diams;</span>
+						<span id="clubs">&clubs;</span>
+					</div>
+					<article>
+						<span class="lignenoir">&rarr;</span>
+						<span class="ligne">&rarr;</span>
+						<span class="ligne">&rarr;</span>
+						<span class="lignenoir">&rarr;</span>
+					</article>
+					<div>
+						<input type="radio" class="carte" name="carte" value="pique" required>
+	 					<input type="radio" class="carte" name="carte" value="coeur" checked required> 
+	 					<input type="radio" class="carte" name="carte" value="carreau" required>
+	  					<input type="radio" class="carte" name="carte" value="trefle" required> 
+					</div>
+				</div>	
+					<input type="submit" value="Se connecter" id="submitButton">
+				</form>
+
+			</section>
+
+			<script>
+			</script>
+		</main>
+
+		<footer>
+		</footer>
+		<script src="scripts/validation.js"></script>	
+	</body>
+		
+</html>

@@ -1,0 +1,71 @@
+html, body{
+	padding:0px; 	/* reset des marges internes */
+	margin:0px;  	/* reset des marges externes */
+	width:100%;		/* Prendra toujours la Largeur max disponible */
+	height:100%;	/* Prendra toujours la Hauteur max disponible */
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 600;
+	font-size: 25px;
+}
+section{
+	width:100%;		/* Prendra toujours la Largeur max disponible de son conteneur (ici <body>) */
+	height:1000px;	/* Prendra toujours la Hauteur max disponible de son conteneur (ici <body>)*/
+	text-align: center;
+	color: pink;
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+p,h1,h2{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+span{
+	display: block;
+	color: white;
+}
+canvas{
+	background-color: white;
+}
+body{
+	background-color:  #0f9b0f;
+}
+
+button{
+	height: 35px;
+	width: 25%;
+	border-radius: 5px;
+	color: white;
+	font-family: Snell Roundhand, cursive;
+	font-size: 18px;
+	border: none;
+}
+
+button:nth-of-type(1){
+	background-color: green;
+	margin-right: 5px;
+}
+button:nth-of-type(2){
+	margin-right: 5px;
+	background-color: red;
+}
+button:nth-of-type(3){
+	background-color: blue;
+}
+#span3{
+	margin-bottom: 25px;
+	color: blue;
+}
+h2:nth-of-type(1){
+	color: #E99920;
+
+}
+h2:nth-of-type(2){
+	color: blue;
+}
+#span2{
+	color: #E99920;
+
+}
+article{
+}

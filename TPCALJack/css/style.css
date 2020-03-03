@@ -1,0 +1,141 @@
+html, body{
+	padding:0px; 	/* reset des marges internes */
+	margin:0px;  	/* reset des marges externes */
+	width:100%;		/* Prendra toujours la Largeur max disponible */
+	height:100%;	/* Prendra toujours la Hauteur max disponible */
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+section{
+	width:100%;		/* Prendra toujours la Largeur max disponible de son conteneur (ici <body>) */
+	height:1000px;	/* Prendra toujours la Hauteur max disponible de son conteneur (ici <body>)*/
+	background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding-top: 50px;
+}
+form > h1{
+	text-align: center;
+	border: 3px dotted black;
+	width:100%;
+	padding:0px;
+	margin:0px;
+	margin-bottom: 40px;
+	border-radius: 3px;
+	animation-name:affiche;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes affiche {
+  0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;} 
+  75%  {background-color:green;} 
+  100% {background-color:red;} 
+}
+/*gérer les formes et ses inputs*/
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 30%;
+	margin:0px auto;
+}
+label{
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+input[type=text],input[type=password]{
+	width: 98%;
+	height: 40px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+/*on parle au deux div dans le premier div(form)*/
+form > div div{
+	width: 20%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+/*on parle au deuxieme div dans le premier div(form)*/
+form > div div:nth-child(2){
+}
+/*on parle aux input dans le deuxime div dans le form*/
+form > div div:nth-of-type(2) input{
+	margin-bottom: 55px;
+}
+/*on parle aux images dans le premier div dans le premier div(form)*/
+form > div > div img{
+	margin-bottom: 25px;
+	height: 45px;
+}
+/*on parle au premier div dans le form*/
+form > div{
+	width: 70%;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*le premier div dans le div*/
+form > div div:nth-of-type(1){
+}
+
+input[type=submit]{
+	margin:0px auto;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	background-color: green;
+	color: white;
+	font-size: 18px;
+	box-shadow: 2px 2px 0px 0px black;
+	animation-name: affiche;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+.carte{
+	position: relative;
+	top: 22px;
+}
+#diams,#hearts,.ligne{
+	color: red;
+}
+.ligne, .lignenoir{
+	animation-name: ligne;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+div article *{
+	display: block;
+	font-size: 60px;
+	position: relative;
+}
+@keyframes ligne {
+  0%   {color:red; left:-100px; top:-10px;}
+  25%  {color:yellow; left:80px; top:-10px;}
+  50%  {color:blue; left:80px; top:-10px;}
+  75%  {color:green; left:-100px; top:-10px;}
+  100% {color:red; left:-100px; top:-10px;}
+}
+#diams,#hearts,#clubs,#spades{
+	font-size: 60px;
+	position: relative;
+	bottom: 5px;
+}
+@media screen and (min-width: 320px) {			/*samsung galaxy 5*/
+}
+@media screen and (min-width: 360px) {			/*samsung galaxy 5*/
+}
+@media screen and (min-width: 375px) {			/*iphone 6/7/8/x*/
+}
+@media screen and (min-width: 410px) {			/*iphone 6/7/8 plus*/
+}
+@media screen and (min-width: 760px) {			/*ipad*/
+}
+@media screen and (min-width: 1000px) {			/*ipad pro*/
+}
