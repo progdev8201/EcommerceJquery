@@ -1,0 +1,73 @@
+<!DOCTYPe html>
+<!---->
+<html lang="fr">
+	<head>
+		<title>TP1</title>
+		<meta charset="utf-8">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="styles/cart.css">
+ 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<!-- MON NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-expand-md navbar-light navbar-custom">
+		  <a class="navbar-brand" href="index.html">Panier</a>
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+			  
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  	<ul class="navbar-nav ml-auto">
+		  		<li class="nav-item">
+			      <a class="nav-link active" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+		  		</li>
+		  		<li class="nav-item">
+			      <a class="nav-link" href="catalogue.html">Catalogue</a>
+		  		</li>
+		  		<li class="nav-item">
+			      <a class="nav-link" href="contact.html">Contact</a>
+		  		</li>
+		    </ul>
+		  </div>
+		</nav>
+
+
+
+		<!--LES TITRES ET LES IMAGES -->
+
+		<section class="container">
+			<table id="cart" class="table table-hover table-condensed mt-5">
+		    	<thead>
+					<tr>
+						<th style="width:50%">Product</th>
+						<th style="width:10%">Price</th>
+						<th style="width:8%">Quantity</th>
+						<th style="width:22%" class="text-center">Subtotal</th>
+						<th style="width:10%"></th>
+					</tr>
+				</thead>
+				<tbody id="monCart">
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<td><a href="catalogue.html" class="btn btn-warning">Continuer de magasiner</a></td>
+						<td colspan="1" class="hidden-xs"></td>
+						<td colspan="2" class="hidden-xs text-center"><strong id="monTotal">Total: 0.00$</strong></td>
+						<td><a href="checkout.html"><button class="btn btn-success payer">Payer</button></a></td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+
+		<footer class="container-fluid padding ">
+			<span class="text-center">Fabory Bangoura Remise: 23 mai 2019</span>
+		</footer>
+		<script src="script/cart.js"></script>
+	</body>
+</html>

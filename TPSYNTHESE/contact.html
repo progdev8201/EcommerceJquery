@@ -1,0 +1,169 @@
+<!DOCTYPe html>
+<!---->
+<html lang="fr">
+	<head>
+		<title>TP1</title>
+		<meta charset="utf-8">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="styles/contact.css">
+ 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<!-- MON NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-expand-md navbar-light navbar-custom">
+		  <a class="navbar-brand" href="index.html">Contact</a>
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+			  
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  	<ul class="navbar-nav ml-auto">
+		  		<li class="nav-item">
+			      <a class="nav-link active" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+		  		</li>
+		  		<li class="nav-item">
+			      <a class="nav-link" href="catalogue.html">Catalogue</a>
+		  		</li>
+		  		<li class="nav-item">
+			      <a class="nav-link" href="cart.html">Panier</a>
+		  		</li>
+		    </ul>
+		  </div>
+		</nav>
+
+
+
+		<!--LES TITRES ET LES IMAGES -->
+
+	<section class="container">
+		<form id="contact-form" method="get">
+			<div class="row welcome text-center">
+				<hr class="w-100">
+				<div class="col-12">
+					<h1 class="display-4">CONTACTEZ NOUS!</h1>
+				</div>
+				<hr class="w-100 mb-5">
+			</div>
+
+    		<div class="messages"></div>
+
+    		<div class="controls">
+
+	        <div class="row">
+	            <div class="col-md-6">
+	                <div class="form-group">
+	                    <label for="form_name">Prénom *</label>
+	                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Veuillez entrer votre prénom *" required="required" minlength="3" maxlength="15" value="Fabory" autofocus>
+	                    <div class="help-block with-errors"></div>
+	                </div>
+	            </div>
+	            <div class="col-md-6">
+	                <div class="form-group">
+	                    <label for="form_lastname">Nom *</label>
+	                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Veuillez entrer votre nom *" required="required" minlength="3" maxlength="25">
+	                    <div class="help-block with-errors"></div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="col-md-6">
+	                <div class="form-group">
+	                    <label for="form_email">Email *</label>
+	                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Veuillez entrer votre email *" required="required" data-error="Valid email is required.">
+	                    <div class="help-block with-errors"></div>
+	                </div>
+	            </div>
+	            <div class="col-md-6">
+	                <div class="form-group">
+	                    <label for="form_need">Veuillez spécifier le sujet du message *</label>
+	                    <select id="form_need" name="need" class="form-control" required="required" data-error="Veuillez spécifier le sujet du message.">
+	                        <option value=""></option>
+	                        <option value="Au sujet d'un prix">Au sujet d'un prix</option>
+	                        <option value="Au sujet du statut de votre commande">Au sujet du statut de votre commande</option>
+	                        <option value="Recevoir une copie de la facture d'achat">Recevoir une copie de la facture d'achat</option>
+	                        <option value="Other">Autre</option>
+	                    </select>
+	                    <div class="help-block with-errors"></div>
+	                </div>
+	            </div>
+	        </div>
+
+	          <div class="row">
+	            <div class="col-md-6">
+	                <div class="form-group">
+	                    <label for="form_genre">Genre *</label>
+	                    <input id="form_genre" type="text" name="genre" class="form-control" placeholder="Veuillez entrer votre sexe *" required="required" data-error="Valid email is required.">
+	                    <div class="help-block with-errors"></div>
+	                </div>
+	            </div>
+	            <div class="col-md-6">
+	                <div class="form-group">
+	                    <label for="form_need">Votre âge *</label>
+	                	 <input id="form_age" type="number" name="age" class="form-control" placeholder="Veuillez entrer votre âge *" required="required" data-error="Valid email is required.">
+	                    <div class="help-block with-errors"></div>
+	                </div>
+	            </div>
+	        </div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						 <label for="form_need">Veuillez spécifier votre revenu familial *</label>
+	                    <select id="form_need" name="need" class="form-control" required="required" data-error="Veuillez spécifier le sujet du message.">
+	                        <option value=""></option>
+	                        <option value="De 1$ à 24 999$">De 1$ à 24 999$</option>
+	                        <option value="De 25 000$ à 49 999$">De 25 000$ à 49 999$</option>
+	                        <option value="De 50 000$ à 69 999$">De 50 000$ à 69 999$</option>
+	                        <option value="De 70 000$ à 99 999$">De 70 000$ à 99 999$</option>
+	                        <option value="De 100 000$ à 499 999$">De 100 000$ à 499 999$</option>
+	                        <option value="500 000$ et plus">500 000$ et plus</option>
+	                    </select>
+					</div>
+				</div>
+			</div>
+
+	        <div class="row">
+	            <div class="col-md-12">
+	                <div class="form-group">
+	                    <label for="form_message">Message *</label>
+	                    <textarea id="form_message" name="message" class="form-control" placeholder="Message pour moi *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+	                    <div class="help-block with-errors"></div>
+	                </div>
+	            </div>
+	            <div class="col-md-12">
+	                <input type="submit" class="btn btn-success btn-send" value="Envoyer">
+	            </div>
+	        </div>
+	    </div>
+
+</form>
+		</section>
+
+		<footer class="container-fluid padding ">
+			<div class="row text-center padding">
+				<div class="col-6 social padding">
+					<h2>COORDONÉES</h2>
+					<hr class="light w-50">
+					<p>Tel: 555-555-5555</p>
+					<p>Email: email@myemail.com</p>
+					<p>100 nom de rue</p>
+					<p>Ville, province, 00000</p>
+				</div>
+
+				<div class="col-6 social padding">
+					<h2>NOS HEURES</h2>
+					<hr>
+					<p>Lundi au Vendredi 9h00 - 21h00</p>
+					<p>Samedi: 10h00 - 17h00</p>
+					<p>Dimanche: Fermé</p>
+				</div>
+				<span class="text-left">Fabory Bangoura Remise:23 mai 2019</span>
+			</div>
+		</footer>
+	</body>
+</html>

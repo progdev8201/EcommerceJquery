@@ -1,0 +1,46 @@
+body{
+	background-color:#A27945; 
+}
+.navbar{
+	background-color: #E9ECEF;
+	color: black;
+}
+.navbar-nav li{
+	padding-right: 40px;
+}
+.inputPersonel{
+	/*position: relative;
+	left: 10%;*/
+	margin:0px auto;
+	width: 20%;
+}
+section{
+	height: 800px;
+}
+.imageProduit{
+	height: 100px;
+	position: relative;
+	left: 25%;
+}
+footer{
+	border-top: 1px solid black;
+	height: 300px;
+	background-color:#282923;
+	color: white;
+	padding-top: 30px;
+}
+footer h2{
+	font-size: 25px;
+}
+footer p{
+	font-size: 13px;
+}
+footer span{
+	position: relative;
+	top: 40px;
+}
+@media screen and (max-width: 800px) {			/*samsung galaxy 5*/
+	section{
+	height: 1200px;
+	}
+}
